@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.3.0...v1.4.0) (2023-03-04)
+
+
+### Features
+
+* **husky:** add husky commit-msg ([5cfa7d6](https://github.com/digitalya-eusebiugagea/my-project/commit/5cfa7d69b1c3a1abacc525102f036ed88344da96))
+
 ## [1.3.0](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.2.0...v1.3.0) (2023-03-04)
 
 
