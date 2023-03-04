@@ -27,8 +27,8 @@ jobs:
           pkg-manager: npm
       - run: echo $CI_USER
       - run: echo $CI_NAME
-      - git config --global user.email $CI_EMAIL
-      - git config --global user.name $CI_NAME
+      - run: git config --global user.email $CI_EMAIL
+      - run: git config --global user.name $CI_NAME
       - run:
           command: npm run release
           name: Create release
