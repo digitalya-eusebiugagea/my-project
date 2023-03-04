@@ -18,27 +18,27 @@ jobs:
             - node/install:
                 node-version: '16.13'
             - run: node --version
-  publish_release:
-    executor: node/default
-    steps:
-      - checkout
-      - when:
-          condition:
-            equal: [ main, << pipeline.git.branch >> ]
-          steps:
-            - node/install-packages:
-                pkg-manager: npm
-            - run: echo $CI_GITHUB_USER_NAME
-            - run: echo $CI_GITHUB_USER_EMAIL
-            - run: git config --global user.email $CI_GITHUB_USER_EMAIL
-            - run: git config --global user.name $CI_GITHUB_USER_NAME
-            - run:
-                command: npm run release
-                name: Create release
-            - persist_to_workspace:
-                root: ~/project
-                paths:
-                  - .
+#   publish_release:
+#     executor: node/default
+#     steps:
+#       - checkout
+#       - when:
+#           condition:
+#             equal: [ main, << pipeline.git.branch >> ]
+#           steps:
+#             - node/install-packages:
+#                 pkg-manager: npm
+#             - run: echo $CI_GITHUB_USER_NAME
+#             - run: echo $CI_GITHUB_USER_EMAIL
+#             - run: git config --global user.email $CI_GITHUB_USER_EMAIL
+#             - run: git config --global user.name $CI_GITHUB_USER_NAME
+#             - run:
+#                 command: npm run release
+#                 name: Create release
+#             - persist_to_workspace:
+#                 root: ~/project
+#                 paths:
+#                   - .
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -47,4 +47,4 @@ workflows:
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - install-node-example
-      - publish_release
+#       - publish_release
