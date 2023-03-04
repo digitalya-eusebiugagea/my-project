@@ -8,34 +8,33 @@ orbs:
 
 jobs:
   install-node-example:
-    filters:
-      branches:
-        only:
-          - main
     docker:
       - image: 'cimg/base:stable'
-    steps:
-      - checkout
-      - node/install:
-          node-version: '16.13'
-      - run: node --version
+      - when:
+          condition:
+            equal: [ main, << pipeline.git.branch >> ]
+          steps:
+            - checkout
+            - node/install:
+                node-version: '16.13'
+            - run: node --version
   publish_release:
-    filters:
-      branches:
-        only:
-          - main
     executor: node/default
     steps:
       - checkout
+      - when:
+          condition:
+            equal: [ main, << pipeline.git.branch >> ]
+          steps:
       - node/install-packages:
           pkg-manager: npm
-      - run: echo $CI_GITHUB_USER_NAME
-      - run: echo $CI_GITHUB_USER_EMAIL
-      - run: git config --global user.email $CI_GITHUB_USER_EMAIL
-      - run: git config --global user.name $CI_GITHUB_USER_NAME
-      - run:
-          command: npm run release
-          name: Create release
+            - run: echo $CI_GITHUB_USER_NAME
+            - run: echo $CI_GITHUB_USER_EMAIL
+            - run: git config --global user.email $CI_GITHUB_USER_EMAIL
+            - run: git config --global user.name $CI_GITHUB_USER_NAME
+            - run:
+                command: npm run release
+                name: Create release
       - persist_to_workspace:
           root: ~/project
           paths:
