@@ -25,10 +25,10 @@ jobs:
       - checkout
       - node/install-packages:
           pkg-manager: npm
-      - run: echo $CI_USER
-      - run: echo $CI_NAME
-      - run: git config --global user.email "digitalya-eusebiugagea"
-      - run: git config --global user.name "eusebiu.gagea@digitalya.co"
+      - run: echo $CI_GITHUB_USER_NAME
+      - run: echo $CI_GITHUB_USER_EMAIL
+      - run: git config --global user.email "eusebiu.gagea@digitalya.co"
+      - run: git config --global user.name "digitalya-eusebiugagea"
       - run:
           command: npm run release
           name: Create release
