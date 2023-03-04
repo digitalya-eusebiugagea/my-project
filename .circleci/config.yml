@@ -25,7 +25,7 @@ jobs:
       - checkout
       - node/install-packages:
           pkg-manager: npm
-      - echo $CI_USER
+      - run: echo $CI_USER
       - echo $CI_NAME
       - git config --global user.email $CI_EMAIL
       - git config --global user.name $CI_NAME
