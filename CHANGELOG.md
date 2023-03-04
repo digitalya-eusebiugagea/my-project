@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.2.0...v1.3.0) (2023-03-04)
+
+
+### Features
+
+* **commitizen:** add commitizen to the project ([c6f31c0](https://github.com/digitalya-eusebiugagea/my-project/commit/c6f31c05922e859a935d9d8ca7e24d76360f2b0c))
+
 ## [1.2.0](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.1.0...v1.2.0) (2023-03-04)
 
 
