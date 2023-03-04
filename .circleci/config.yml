@@ -36,6 +36,7 @@ jobs:
             - run:
                 command: npm run release
                 name: Create release
+            - run: git push --follow-tags origin << pipeline.git.branch >>
             - persist_to_workspace:
                 root: ~/project
                 paths:
