@@ -10,11 +10,12 @@ jobs:
   install-node-example:
     docker:
       - image: 'cimg/base:stable'
+    steps:
+      - checkout
       - when:
           condition:
             equal: [ main, << pipeline.git.branch >> ]
           steps:
-            - checkout
             - node/install:
                 node-version: '16.13'
             - run: node --version
