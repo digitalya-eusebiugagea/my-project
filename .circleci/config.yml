@@ -7,6 +7,14 @@ orbs:
   node: circleci/node@5.1.0
 
 jobs:
+  install-node-example:
+    docker:
+      - image: 'cimg/base:stable'
+    steps:
+      - checkout
+      - node/install:
+          node-version: '16.13'
+      - run: node --version
   publish_release:
     executor: node/default
     steps:
@@ -28,4 +36,5 @@ workflows:
   sample: # This is the name of the workflow, feel free to change it to better match your workflow.
     # Inside the workflow, you define the jobs you want to run.
     jobs:
+      - install-node-example
       - publish_release
