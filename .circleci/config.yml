@@ -37,8 +37,8 @@ jobs:
                 command: npm run release
                 name: Create release
             - add_ssh_keys:
-              fingerprints:
-                - "b4:d9:d8:3a:5e:ca:8d:17:e1:bd:2d:ac:6b:c0:50:4e"
+                fingerprints:
+                  - "b4:d9:d8:3a:5e:ca:8d:17:e1:bd:2d:ac:6b:c0:50:4e"
             - run: git push --follow-tags origin << pipeline.git.branch >>
             - persist_to_workspace:
                 root: ~/project
