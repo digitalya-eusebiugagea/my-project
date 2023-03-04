@@ -12,6 +12,9 @@ jobs:
       - image: 'cimg/base:stable'
     steps:
       - checkout
+      - when:
+          condition:
+            equal: [ main, << pipeline.git.branch >> ]
       - node/install:
           node-version: '16.13'
       - run: node --version
@@ -19,6 +22,9 @@ jobs:
     executor: node/default
     steps:
       - checkout
+      - when:
+          condition:
+            equal: [ main, << pipeline.git.branch >> ]
       - node/install-packages:
           pkg-manager: npm
       - run: echo $CI_GITHUB_USER_NAME
