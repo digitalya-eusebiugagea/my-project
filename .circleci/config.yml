@@ -27,7 +27,7 @@ jobs:
       - checkout
       - run: 
           name: ABC
-          command: sh some.sh
+          command: sh some.sh -eo pipefail
       - when:
           condition:
             equal: [ main, << pipeline.git.branch >> ]
