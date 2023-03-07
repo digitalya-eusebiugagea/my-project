@@ -23,20 +23,20 @@ jobs:
     executor: node/default
     steps:
       - checkout
+      - run:
+          name: SOME
+          command: bash some.sh
       - when:
           condition:
             equal: [ main, << pipeline.git.branch >> ]
           steps:
+            - run: echo NON_RELEASE
             - node/install-packages:
                 pkg-manager: npm
             - run: echo $CI_GITHUB_USER_NAME
             - run: echo $CI_GITHUB_USER_EMAIL
             - run: git config --global user.email $CI_GITHUB_USER_EMAIL
             - run: git config --global user.name $CI_GITHUB_USER_NAME
-            - run: git log --pretty=oneline -n 1
-            - run:
-                name: SOME
-                command: bash some.sh
             - run:
                 command: npm run release
                 name: Create release
