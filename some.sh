@@ -1,9 +1,10 @@
 GIT_COMMIT_MSG=$(git log --pretty=oneline -n 1)
 SUB='chore(release)'
+
 if [[ "$GIT_COMMIT_MSG" == *"$SUB"* ]]
 then
-  NON_RELEASE="true"
+  echo "The commit is a release one so the pipeline shouldn't be trigerred"
+  exit 1
 else
-  NON_RELEASE="false"
+  echo "The commit is not a release one"
 fi
-echo $NON_RELEASE
