@@ -25,26 +25,15 @@ jobs:
     executor: node/default
     steps:
       - checkout
-      - run: 
-          name: ABC
-          command:  sh some.sh
       - when:
           condition:
             equal: [ main, << pipeline.git.branch >> ]
           steps:
             - node/install-packages:
                 pkg-manager: npm
-            - run: echo $CI_GITHUB_USER_NAME
-            - run: echo $CI_GITHUB_USER_EMAIL
-            - run: git config --global user.email $CI_GITHUB_USER_EMAIL
-            - run: git config --global user.name $CI_GITHUB_USER_NAME
             - run:
-                command: npm run release
-                name: Create release
-            - add_ssh_keys:
-                fingerprints:
-                  - ""
-            - run: git push --follow-tags origin << pipeline.git.branch >>
+                command: npm run semantic-release
+                name: Create semantic release
             - persist_to_workspace:
                 root: ~/project
                 paths:
