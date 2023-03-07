@@ -48,10 +48,11 @@
     ],
     "prepare": [
       "@semantic-release/changelog",
-      "@semantic-release/npm",
       {
-        "npmPublish": false,
-        "ci": false,
+        "path": "@semantic-release/npm",
+        "npmPublish": false
+      },
+      {
         "path": "@semantic-release/git",
         "assets": [
           "package.json",
