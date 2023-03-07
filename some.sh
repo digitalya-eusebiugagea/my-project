@@ -5,4 +5,5 @@ then
   exit 1
 else
   echo "The commit is not a release one"
+  exit 1
 fi
