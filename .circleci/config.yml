@@ -23,9 +23,6 @@ jobs:
             - run: node --version
   publish_release:
     executor: node/default
-    filters:
-      tags:
-        only: /^v.*/
     steps:
       - checkout
       - when:
@@ -57,4 +54,7 @@ workflows:
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - install-node-example
-      - publish_release
+      - publish_release:
+        filters:
+          tags:
+            only: /^v.*/
