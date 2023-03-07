@@ -1,3 +1,10 @@
+## [1.13.2](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.13.1...v1.13.2) (2023-03-07)
+
+
+### Code Refactoring
+
+* clean circleci ([6b9a7ef](https://github.com/digitalya-eusebiugagea/my-project/commit/6b9a7ef196da9e45e057bedc4f5fd769ad9b386c))
+
 ## [1.13.1](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.13.0...v1.13.1) (2023-03-07)
 
 
