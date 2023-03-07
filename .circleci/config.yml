@@ -43,7 +43,7 @@ jobs:
                 name: Create release
             - add_ssh_keys:
                 fingerprints:
-                  - "72:1e:bc:40:5d:95:f1:1b:c5:56:02:c1:f7:4c:4a:7f"
+                  - ""
             - run: git push --follow-tags origin << pipeline.git.branch >>
             - persist_to_workspace:
                 root: ~/project
