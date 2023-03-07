@@ -1,3 +1,15 @@
+# [1.13.0](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.12.0...v1.13.0) (2023-03-07)
+
+
+### Bug Fixes
+
+* abc ([0a9113b](https://github.com/digitalya-eusebiugagea/my-project/commit/0a9113b99d7574d6fc07bb307f9d9a0f9a11a6ba))
+
+
+### Features
+
+* abc ([fcfdc3d](https://github.com/digitalya-eusebiugagea/my-project/commit/fcfdc3d9fe3ae51b030539b2aa846b17210a22a2))
+
 # [1.12.0](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.11.0...v1.12.0) (2023-03-07)
 
 
