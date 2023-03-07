@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.25](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.8.24...v1.8.25) (2023-03-07)
+
 ### [1.8.24](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.8.23...v1.8.24) (2023-03-07)
 
 ### [1.8.23](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.8.22...v1.8.23) (2023-03-07)
