@@ -4,5 +4,5 @@ if [[ "$GIT_COMMIT_MSG" == *"$SUB"* ]]
 then
   $NON_RELEASE=true
 else
-  echo $NON_RELEASE=false
+  $NON_RELEASE=false
 fi
