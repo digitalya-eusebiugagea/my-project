@@ -26,8 +26,8 @@ jobs:
     steps:
       - checkout
       - run: 
-        name: ABC
-        command: sh some.sh
+          name: ABC
+          command: sh some.sh
       - when:
           condition:
             equal: [ main, << pipeline.git.branch >> ]
