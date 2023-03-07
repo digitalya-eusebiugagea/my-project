@@ -18,7 +18,7 @@ jobs:
               - equal: [ main, << pipeline.git.branch >> ]
           steps:
             - node/install:
-                node-version: '16.13'
+                node-version: '18.14.2'
             - run: node --version
   publish_release:
     executor: node/default
