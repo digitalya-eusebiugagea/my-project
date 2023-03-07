@@ -1,7 +1,8 @@
 {
     "scripts": {
-      "prebump": "echo 9.9.9"
-    }
+      "prebump": "echo 9.9.9",
+      "precommit": "echo 9.9.9"
+    },
     "types": [
         {"type": "revert", "section":"Reverts", "hidden": false},
         {"type": "feat", "section": "Features", "hidden": false},
