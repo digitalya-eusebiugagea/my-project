@@ -57,4 +57,4 @@ workflows:
       - publish_release:
         filters:
           tags:
-            only: /^v.*/
+            ignore: /^v.*/
