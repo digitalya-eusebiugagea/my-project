@@ -1,3 +1,20 @@
+# [1.11.0](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.10.13...v1.11.0) (2023-03-07)
+
+
+### Bug Fixes
+
+* **abc:** abc ([8bba484](https://github.com/digitalya-eusebiugagea/my-project/commit/8bba484e4904df64c3e5999a7728e0fa925a2ffb))
+
+
+### Features
+
+* **abc:** abc ([4e17fc5](https://github.com/digitalya-eusebiugagea/my-project/commit/4e17fc5c2c7e78b375764b05986917d1cca2f905))
+* **abc:** abc ([7af1e23](https://github.com/digitalya-eusebiugagea/my-project/commit/7af1e23173f04eacbb3d72e39694530e599e9772))
+* **abc:** abc ([f213830](https://github.com/digitalya-eusebiugagea/my-project/commit/f21383085ff01bda87824adce4bed321aeb792ca))
+* **abc:** abc ([6624466](https://github.com/digitalya-eusebiugagea/my-project/commit/66244667ada9c04bff9c7ec63298beb98070e2f3))
+* **pk:** pk ([05e4578](https://github.com/digitalya-eusebiugagea/my-project/commit/05e4578c4a6c0e4e359c336abfaa0ac038aafee6))
+* **try:** try ([2389269](https://github.com/digitalya-eusebiugagea/my-project/commit/2389269e341f01f7f09fbafd162f7118c61be646))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
