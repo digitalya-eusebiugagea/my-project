@@ -33,10 +33,10 @@ jobs:
             - run: echo $CI_GITHUB_USER_EMAIL
             - run: git config --global user.email $CI_GITHUB_USER_EMAIL
             - run: git config --global user.name $CI_GITHUB_USER_NAME
+            - run: git log --pretty=oneline -n 1
             - run:
                 command: npm run release
                 name: Create release
-            - run: git log --pretty=oneline -n 1
             - add_ssh_keys:
                 fingerprints:
                   - ""
