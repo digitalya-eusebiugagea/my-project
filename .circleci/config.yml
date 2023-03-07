@@ -30,7 +30,7 @@ jobs:
           condition:
             equal: [ main, << pipeline.git.branch >> ]
           steps:
-            - run: echo NON_RELEASE
+            - run: echo $NON_RELEASE
             - node/install-packages:
                 pkg-manager: npm
             - run: echo $CI_GITHUB_USER_NAME
