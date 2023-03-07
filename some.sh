@@ -6,3 +6,4 @@ then
 else
   NON_RELEASE="false"
 fi
+echo $NON_RELEASE
