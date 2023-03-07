@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.11.0...v1.12.0) (2023-03-07)
+
+
+### Features
+
+* **abc:** xyz ([ab07d51](https://github.com/digitalya-eusebiugagea/my-project/commit/ab07d510dc65bf37eb44b19e8e8432511eb27c1d))
+
 # [1.11.0](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.10.13...v1.11.0) (2023-03-07)
 
 
