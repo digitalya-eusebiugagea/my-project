@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.5.0...v1.6.0) (2023-03-07)
+
+
+### Features
+
+* **abc:** abc ([e02aaed](https://github.com/digitalya-eusebiugagea/my-project/commit/e02aaed7f9b5f34f1ae61f746cc4c352705b1b47))
+
+
+### Bug Fixes
+
+* **abc:** abc ([84e5fb7](https://github.com/digitalya-eusebiugagea/my-project/commit/84e5fb7259f56974a8612c8f08858729c1fc3f09))
+
 ## [1.5.0](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.4.0...v1.5.0) (2023-03-04)
 
 
