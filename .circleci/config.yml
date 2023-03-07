@@ -35,11 +35,8 @@ jobs:
             - run: git config --global user.name $CI_GITHUB_USER_NAME
             - run: git log --pretty=oneline -n 1
             - run:
-                name: ABC
-                command:
-                  STR='GNU/Linux is an operating system'
-                  SUB='Linux'
-                  if [[ "$STR" == *"$SUB"* ]] then echo "It's there." fi
+                name: SOME
+                command: bash some.sh
             - run:
                 command: npm run release
                 name: Create release
