@@ -14,7 +14,9 @@ jobs:
       - checkout
       - when:
           condition:
-            equal: [ main, << pipeline.git.branch >> ]
+            and:
+              equal: [ main, << pipeline.git.branch >> ]
+              equal: [ true, << $(bash some.sh) >> ]
           steps:
             - node/install:
                 node-version: '16.13'
