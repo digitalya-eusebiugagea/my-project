@@ -1,3 +1,15 @@
+## [1.13.1](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.13.0...v1.13.1) (2023-03-07)
+
+
+### Documentation
+
+* what ([0581bbc](https://github.com/digitalya-eusebiugagea/my-project/commit/0581bbc397a479483818fd611de27ece3aedc51f))
+
+
+### Code Refactoring
+
+* sth nice ([c54242a](https://github.com/digitalya-eusebiugagea/my-project/commit/c54242a7b7e6a5f9cd217244b16789764ad9465f))
+
 # [1.13.0](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.12.0...v1.13.0) (2023-03-07)
 
 
