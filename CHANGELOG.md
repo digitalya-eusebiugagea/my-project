@@ -1,3 +1,10 @@
+## [1.15.0](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.14.0...v1.15.0) (2023-03-22)
+
+
+### Features
+
+* updated relese.config ([ae79887](https://github.com/digitalya-eusebiugagea/my-project/commit/ae7988793c6e36656675456297820d32b250f7b5))
+
 ## [1.14.0](https://github.com/digitalya-eusebiugagea/my-project/compare/v1.13.3...v1.14.0) (2023-03-22)
 
 
